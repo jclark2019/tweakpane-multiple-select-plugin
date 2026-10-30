@@ -5,21 +5,21 @@
 	<title></title>
 </head>
 <body>
-	<script src="../node_modules/tweakpane/dist/tweakpane.js"></script>
 	<script type="module">
-    import * as IvanliCnTweakpaneMultipleSelectPlugin from '../dist/ivanli-cn-tweakpane-multiple-select-plugin.module.js';
+            import { Pane } from '/public/_assets/js/tweakpane.3.1.9.js';
+    import * as IvanliCnTweakpaneMultipleSelectPlugin from '/tweakpane-multiple-select-plugin/dist/ivanli-cn-tweakpane-multiple-select-plugin.umd.js';
 
 		const params = {
 			prop: ['c'],
 			empty: [],
 		};
-		const pane = new Tweakpane.Pane();
+		const pane = new Pane();
 
 		// Register plugin
 		pane.registerPlugin(IvanliCnTweakpaneMultipleSelectPlugin);
 
 		// TODO: Update parameters for your plugin
-		pane.addInput(params, 'prop', {
+		pane.addBlade(params, 'prop', {
 			view: 'multiple-select',
 			options: {
 				"A": "a",

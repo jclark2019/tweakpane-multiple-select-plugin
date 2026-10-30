@@ -1,0 +1,25 @@
+.tp-multiple-selectv {
+  max-height: calc(var(--bld-us) * 5);
+  overflow-y: auto;
+  position: relative;
+  color: var(--in-fg);
+}
+.tp-multiple-selectv.tp-v-disabled {
+  opacity: 0.5;
+}
+.tp-multiple-selectv_option {
+  display: flex;
+  align-content: center;
+  gap: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.tp-multiple-selectv_input {
+  margin: 0;
+}
+.tp-multiple-selectv_text {
+  flex: auto;
+}
+.tp-multiple-selectv_empty {
+  color: var(--in-fg-placeholder);
+}/*# sourceMappingURL=plugin.css.map */
